@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculation of monthly salary</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="fs-1 my-5 text-center text-capitalize fw-bolder">
+        calculation of monthly salary
+      </h1>
+
+      <section class="row">
+        <!-- image -->
+        <div class="col-lg-6 col-12">
+          <img src="images/bank.png" class="img-fluid" alt="" />
+        </div>
+
+        <!-- content -->
+        <div class="mt-5 mt-lg-0 mt-md-0 col-lg-6 col-12">
+          <!-- income -->
+          <h2 class="">Income</h2>
+          <div class="input-group w-75">
+            <span class="input-group-text">Income :</span>
+            <input type="number" id="income" class="form-control" />
+            <p id="income-error" ></p>
+          </div>
+
+          <div class="my-5">
+            <!-- total expenses -->
+            <h2 class="">Expenses</h2>
+            <!-- food cost -->
+            <div class="input-group my-4">
+              <span class="input-group-text">Food :-</span>
+              <input  id="food-cost" type="number" class="form-control text" />
+            </div>
+            <!-- rent cost  -->
+            <div class="input-group my-4">
+              <span class="input-group-text">Rent :-</span>
+              <input  id="rent-cost" type="number" class="form-control text" />
+            </div>
+            <!-- clothes cost -->
+            <div class="input-group my-4 ">
+              <span class="input-group-text">Clothes :-</span>
+              <input  id="clothes-cost" type="number" class="form-control text" />
+            </div>
+             <p class="my-4 text-danger" id="expenses-input-field-error"></p>
+            <button id="calculate" class="btn btn-dark">Calculate</button>
+
+            <p class="my-3 text-danger" id="greater-expenses-error"></p>
+            
+            <p class="fs-4 fw-bold mt-3">
+              Total Expenses : <span id="total-expenses">00</span>
+            </p>
+
+            <p class="text-danger" id="expenses-error"></p>
+
+            <p class="fs-4 fw-bold">Balance : <span id="balance">00</span></p>
+            <p class="text-danger" id="balance-error"></p>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text">Save</span>
+              <input id="save-input" type="number" class="form-control me-5" />
+              <span class="input-group-text ms-lg-4 me-4 text-center">%</span>
+              <button id="save" class="btn btn-success">Save</button>
+            </div>
+
+            <p class="fs-3 fw-bold">
+              Saving Amount : <span id="saving-amount">00</span>
+            </p>
+            <p class="my-3 text-danger" id="saving-error">Error: you can't save money more than your balance</p>
+            <p class="fs-3 fw-bold">
+              Remaining-Balance : <span id="remaining-balance">00</span>
+            </p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- js link -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/test.js"></script> -->
+  </body>
+</html>
